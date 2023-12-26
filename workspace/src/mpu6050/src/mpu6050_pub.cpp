@@ -3,7 +3,11 @@
 //Licensed under the CC BY-NC SA 4.0
 
 //Example code
-
+#include "rclcpp/rclcpp.hpp"
+#include "geometry_msgs/msg/transform_stamped.hpp"
+#include "tf2/LinearMath/Quaternion.h"
+#include "tf2_ros/transform_broadcaster.h"
+#include <math.h>
 #include <mpu6050/MPU6050.h>
 
 MPU6050 device(0x68);
@@ -23,16 +27,51 @@ int main() {
 	//Read the current yaw angle
 	device.calc_yaw = true;
 
-	for (int i = 0; i < 40; i++) {
+	// Initialize ROS 2
+    rclcpp::init(argc, argv);
+    auto node = rclcpp::Node::make_shared("transform_publisher");
+
+    // Create a TransformStamped message
+    geometry_msgs::msg::TransformStamped transform_stamped;
+
+    // Create a TransformBroadcaster
+    tf2_ros::TransformBroadcaster broadcaster(node);
+
+    // Set the frame IDs
+    transform_stamped.header.frame_id = "base_frame";
+    transform_stamped.child_frame_id = "child_frame";
+
+    // Main loop
+    rclcpp::Rate loop_rate(1); // 1 Hz
+
+	// for (int i = 0; i < 40; i++) {
+	while (rclcpp::ok()){
 		device.getAngle(0, &gr);
 		device.getAngle(1, &gp);
 		device.getAngle(2, &gy);
 		std::cout << "Current angle around the roll axis: " << gr << "\n";
 		std::cout << "Current angle around the pitch axis: " << gp << "\n";
 		std::cout << "Current angle around the yaw axis: " << gy << "\n";
-		usleep(250000); //0.25sec
-	}
+		// usleep(250000); //0.25sec
+		// Update quaternion from Euler angles
+        tf2::Quaternion quaternion;
+        quaternion.setRPY(0.1, 0.2, 0.3); // Replace with your desired Euler angles
 
+        // Set the quaternion and timestamp in the TransformStamped message
+        transform_stamped.transform.rotation.x = quaternion.x();
+        transform_stamped.transform.rotation.y = quaternion.y();
+        transform_stamped.transform.rotation.z = quaternion.z();
+        transform_stamped.transform.rotation.w = quaternion.w();
+        transform_stamped.header.stamp = node->now();
+
+        // Broadcast the transform
+        broadcaster.sendTransform(transform_stamped);
+
+        // Spin and sleep
+        rclcpp::spin_some(node);
+        loop_rate.sleep();
+	}
+	rclcpp::shutdown();
 	//Get the current accelerometer values
 	device.getAccel(&ax, &ay, &az);
 	std::cout << "Accelerometer Readings: X: " << ax << ", Y: " << ay << ", Z: " << az << "\n";
