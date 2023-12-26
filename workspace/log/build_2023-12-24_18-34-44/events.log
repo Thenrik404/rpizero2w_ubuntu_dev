@@ -1,0 +1,41 @@
+[0.000000] (-) TimerEvent: {}
+[0.000193] (mpu6050) JobQueued: {'identifier': 'mpu6050', 'dependencies': OrderedDict()}
+[0.000374] (mpu6050) JobStarted: {'identifier': 'mpu6050'}
+[0.009394] (mpu6050) JobProgress: {'identifier': 'mpu6050', 'progress': 'cmake'}
+[0.009429] (mpu6050) Command: {'cmd': ['/usr/bin/cmake', '/home/rpizero2w_ubuntu_clone/workspace/src/mpu6050', '-DCMAKE_INSTALL_PREFIX=/home/rpizero2w_ubuntu_clone/workspace/install/mpu6050'], 'cwd': '/home/rpizero2w_ubuntu_clone/workspace/build/mpu6050', 'env': OrderedDict([('HOSTNAME', 'phoenix'), ('GIT_ASKPASS', '/home/docker/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('BROWSER', '/home/docker/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/helpers/browser.sh'), ('HOME', '/home/docker'), ('OLDPWD', '/home'), ('TERM_PROGRAM_VERSION', '1.85.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-aed6a531-4dbd-43a9-8178-1b5000383249.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/docker/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/docker/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-9098a685-81a3-4a8a-82b5-43c5a2bbb29f.sock'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm-256color'), ('DEBUG_COLORS', 'true'), ('PATH', '/home/docker/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-9098a685-81a3-4a8a-82b5-43c5a2bbb29f.sock","/tmp/.X11-unix/X4","/home/docker/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-5a0ba3ea8a.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-9098a685-81a3-4a8a-82b5-43c5a2bbb29f.sock'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rpizero2w_ubuntu_clone/workspace/build/mpu6050'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1')]), 'shell': False}
+[0.061566] (mpu6050) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099931] (-) TimerEvent: {}
+[0.106493] (mpu6050) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.114340] (mpu6050) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.154447] (mpu6050) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.158640] (mpu6050) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.158950] (mpu6050) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.159553] (mpu6050) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.161841] (mpu6050) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.200157] (-) TimerEvent: {}
+[0.204065] (mpu6050) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.208239] (mpu6050) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.208407] (mpu6050) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.208873] (mpu6050) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.212406] (mpu6050) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.212506] (mpu6050) StdoutLine: {'line': b'See also "/home/rpizero2w_ubuntu_clone/workspace/build/mpu6050/CMakeFiles/CMakeOutput.log".\n'}
+[0.212545] (mpu6050) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (find_package):\n'}
+[0.212588] (mpu6050) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.212618] (mpu6050) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.212647] (mpu6050) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.212671] (mpu6050) StderrLine: {'line': b'\n'}
+[0.212695] (mpu6050) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.212721] (mpu6050) StderrLine: {'line': b'  any of the following names:\n'}
+[0.212745] (mpu6050) StderrLine: {'line': b'\n'}
+[0.212767] (mpu6050) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.212791] (mpu6050) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.212817] (mpu6050) StderrLine: {'line': b'\n'}
+[0.212841] (mpu6050) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.212866] (mpu6050) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.212891] (mpu6050) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.212917] (mpu6050) StderrLine: {'line': b'  has been installed.\n'}
+[0.212942] (mpu6050) StderrLine: {'line': b'\n'}
+[0.212966] (mpu6050) StderrLine: {'line': b'\x1b[0m\n'}
+[0.214669] (mpu6050) CommandEnded: {'returncode': 1}
+[0.231779] (mpu6050) JobEnded: {'identifier': 'mpu6050', 'rc': 1}
+[0.242087] (-) EventReactorShutdown: {}

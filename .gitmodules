@@ -1,0 +1,3 @@
+[submodule "workspace/MPU6050-C-CPP-Library-for-Raspberry-Pi"]
+	path = workspace/MPU6050-C-CPP-Library-for-Raspberry-Pi
+	url = https://github.com/alex-mous/MPU6050-C-CPP-Library-for-Raspberry-Pi.git

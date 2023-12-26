@@ -1,0 +1,34 @@
+-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/rpizero2w_ubuntu_clone/workspace/src/mpu6050/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/rpizero2w_ubuntu_clone/workspace/src/build/mpu6050
+[ 33%] [32mBuilding CXX object CMakeFiles/mpu6050_pub.dir/src/mpu6050_pub.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/mpu6050_pub.dir/src/MPU6050.cpp.o[0m
+[100%] [32m[1mLinking CXX executable mpu6050_pub[0m
+/usr/bin/ld: CMakeFiles/mpu6050_pub.dir/src/MPU6050.cpp.o: in function `MPU6050::MPU6050(signed char, bool)':
+MPU6050.cpp:(.text+0x11f): undefined reference to `i2c_smbus_write_byte_data'
+/usr/bin/ld: MPU6050.cpp:(.text+0x137): undefined reference to `i2c_smbus_write_byte_data'
+/usr/bin/ld: MPU6050.cpp:(.text+0x14f): undefined reference to `i2c_smbus_write_byte_data'
+/usr/bin/ld: MPU6050.cpp:(.text+0x167): undefined reference to `i2c_smbus_write_byte_data'
+/usr/bin/ld: MPU6050.cpp:(.text+0x17f): undefined reference to `i2c_smbus_write_byte_data'
+/usr/bin/ld: CMakeFiles/mpu6050_pub.dir/src/MPU6050.cpp.o:MPU6050.cpp:(.text+0x197): more undefined references to `i2c_smbus_write_byte_data' follow
+/usr/bin/ld: CMakeFiles/mpu6050_pub.dir/src/MPU6050.cpp.o: in function `MPU6050::getGyroRaw(float*, float*, float*)':
+MPU6050.cpp:(.text+0x342): undefined reference to `i2c_smbus_read_byte_data'
+/usr/bin/ld: MPU6050.cpp:(.text+0x35a): undefined reference to `i2c_smbus_read_byte_data'
+/usr/bin/ld: MPU6050.cpp:(.text+0x373): undefined reference to `i2c_smbus_read_byte_data'
+/usr/bin/ld: MPU6050.cpp:(.text+0x38b): undefined reference to `i2c_smbus_read_byte_data'
+/usr/bin/ld: MPU6050.cpp:(.text+0x3a4): undefined reference to `i2c_smbus_read_byte_data'
+/usr/bin/ld: CMakeFiles/mpu6050_pub.dir/src/MPU6050.cpp.o:MPU6050.cpp:(.text+0x3bc): more undefined references to `i2c_smbus_read_byte_data' follow
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/mpu6050_pub.dir/build.make:113: mpu6050_pub] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mpu6050_pub.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

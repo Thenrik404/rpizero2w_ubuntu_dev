@@ -1,0 +1,22 @@
+[0.020s] Invoking command in '/home/rpizero2w_ubuntu_clone/workspace/src/build/mpu6050': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rpizero2w_ubuntu_clone/workspace/src/build/mpu6050 -- -j20 -l20
+[0.039s] [35m[1mConsolidate compiler generated dependencies of target mpu6050_pub[0m
+[0.046s] [ 33%] [32m[1mLinking CXX executable mpu6050_pub[0m
+[0.080s] /usr/bin/ld: CMakeFiles/mpu6050_pub.dir/src/MPU6050.cpp.o: in function `MPU6050::MPU6050(signed char, bool)':
+[0.080s] MPU6050.cpp:(.text+0x11f): undefined reference to `i2c_smbus_write_byte_data'
+[0.081s] /usr/bin/ld: MPU6050.cpp:(.text+0x137): undefined reference to `i2c_smbus_write_byte_data'
+[0.081s] /usr/bin/ld: MPU6050.cpp:(.text+0x14f): undefined reference to `i2c_smbus_write_byte_data'
+[0.081s] /usr/bin/ld: MPU6050.cpp:(.text+0x167): undefined reference to `i2c_smbus_write_byte_data'
+[0.081s] /usr/bin/ld: MPU6050.cpp:(.text+0x17f): undefined reference to `i2c_smbus_write_byte_data'
+[0.081s] /usr/bin/ld: CMakeFiles/mpu6050_pub.dir/src/MPU6050.cpp.o:MPU6050.cpp:(.text+0x197): more undefined references to `i2c_smbus_write_byte_data' follow
+[0.081s] /usr/bin/ld: CMakeFiles/mpu6050_pub.dir/src/MPU6050.cpp.o: in function `MPU6050::getGyroRaw(float*, float*, float*)':
+[0.081s] MPU6050.cpp:(.text+0x342): undefined reference to `i2c_smbus_read_byte_data'
+[0.081s] /usr/bin/ld: MPU6050.cpp:(.text+0x35a): undefined reference to `i2c_smbus_read_byte_data'
+[0.081s] /usr/bin/ld: MPU6050.cpp:(.text+0x373): undefined reference to `i2c_smbus_read_byte_data'
+[0.081s] /usr/bin/ld: MPU6050.cpp:(.text+0x38b): undefined reference to `i2c_smbus_read_byte_data'
+[0.081s] /usr/bin/ld: MPU6050.cpp:(.text+0x3a4): undefined reference to `i2c_smbus_read_byte_data'
+[0.081s] /usr/bin/ld: CMakeFiles/mpu6050_pub.dir/src/MPU6050.cpp.o:MPU6050.cpp:(.text+0x3bc): more undefined references to `i2c_smbus_read_byte_data' follow
+[0.083s] collect2: error: ld returned 1 exit status
+[0.084s] gmake[2]: *** [CMakeFiles/mpu6050_pub.dir/build.make:113: mpu6050_pub] Error 1
+[0.084s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mpu6050_pub.dir/all] Error 2
+[0.084s] gmake: *** [Makefile:146: all] Error 2
+[0.086s] Invoked command in '/home/rpizero2w_ubuntu_clone/workspace/src/build/mpu6050' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rpizero2w_ubuntu_clone/workspace/src/build/mpu6050 -- -j20 -l20

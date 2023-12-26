@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/hw_test.dir/src/hw.cpp.o -o hw_test 
