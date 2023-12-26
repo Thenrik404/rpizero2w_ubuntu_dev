@@ -6,12 +6,18 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 # find dependencies
-find_package(ament_cmake REQUIRED)
+find_package(ament_cmake REQUIRED
+  rclcpp REQUIRED
+  geometry_msgs REQUIRED
+  tf2 REQUIRED
+  tf2_ros REQUIRED
+)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
 add_executable(mpu6050_pub src/mpu6050_pub.cpp src/MPU6050.cpp)
+ament_target_dependencies(mpu6050_pub rclcpp geometry_msgs tf2 tf2_ros)
 target_include_directories(mpu6050_pub PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
