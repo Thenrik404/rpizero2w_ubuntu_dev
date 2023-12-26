@@ -1,2 +1,0 @@
-Invoking command in '/home/rpizero2w_ubuntu_clone/workspace/build/mpu6050': /usr/bin/cmake /home/rpizero2w_ubuntu_clone/workspace/src/mpu6050 -DCMAKE_INSTALL_PREFIX=/home/rpizero2w_ubuntu_clone/workspace/install/mpu6050
-Invoked command in '/home/rpizero2w_ubuntu_clone/workspace/build/mpu6050' returned '1': /usr/bin/cmake /home/rpizero2w_ubuntu_clone/workspace/src/mpu6050 -DCMAKE_INSTALL_PREFIX=/home/rpizero2w_ubuntu_clone/workspace/install/mpu6050
