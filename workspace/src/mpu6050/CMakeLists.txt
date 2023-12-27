@@ -23,6 +23,7 @@ include_directories(
 add_executable(mpu_6050_pub src/mpu6050_pub.cpp src/MPU6050.cpp)
 ament_target_dependencies(mpu_6050_pub rclcpp std_msgs geometry_msgs tf2 tf2_ros)
 target_link_libraries(mpu_6050_pub -li2c)
+target_compile_features(mpu6050_pub PUBLIC c_std_99 cxx_std_17)
 install(TARGETS
 mpu_6050_pub
   DESTINATION lib/${PROJECT_NAME})
