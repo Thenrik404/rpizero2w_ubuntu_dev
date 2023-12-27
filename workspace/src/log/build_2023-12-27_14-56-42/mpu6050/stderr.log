@@ -1,0 +1,6 @@
+[31mCMake Error at CMakeLists.txt:25 (target_link_libraries):
+  Cannot specify link libraries for target "mpu6050_pub" which is not built
+  by this project.
+
+[0m
+gmake: *** [Makefile:294: cmake_check_build_system] Error 1

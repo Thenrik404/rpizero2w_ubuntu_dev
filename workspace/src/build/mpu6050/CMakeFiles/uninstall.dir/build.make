@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rpizero2w_ubuntu_clone/workspace/src/mpu6050
+CMAKE_SOURCE_DIR = /home/docker/rpizero2w_ubuntu_dev/workspace/src/mpu6050
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rpizero2w_ubuntu_clone/workspace/src/build/mpu6050
+CMAKE_BINARY_DIR = /home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/rpizero2w_ubuntu_clone/workspace/src/build/mpu6050 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rpizero2w_ubuntu_clone/workspace/src/mpu6050 /home/rpizero2w_ubuntu_clone/workspace/src/mpu6050 /home/rpizero2w_ubuntu_clone/workspace/src/build/mpu6050 /home/rpizero2w_ubuntu_clone/workspace/src/build/mpu6050 /home/rpizero2w_ubuntu_clone/workspace/src/build/mpu6050/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/docker/rpizero2w_ubuntu_dev/workspace/src/mpu6050 /home/docker/rpizero2w_ubuntu_dev/workspace/src/mpu6050 /home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050 /home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050 /home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

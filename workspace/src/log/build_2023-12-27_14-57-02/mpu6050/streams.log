@@ -1,0 +1,49 @@
+[0.026s] Invoking command in '/home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050 -- -j20 -l20
+[0.040s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.118s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[0.132s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.133s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.137s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.143s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.151s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.184s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.184s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.240s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.329s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.354s] -- Found tf2: 0.25.5 (/opt/ros/humble/share/tf2/cmake)
+[0.359s] -- Found tf2_ros: 0.25.5 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.548s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.587s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.587s] -- Configured cppcheck include dirs: /home/docker/rpizero2w_ubuntu_dev/workspace/src/mpu6050/include
+[0.587s] -- Configured cppcheck exclude dirs and/or files: 
+[0.587s] -- Added test 'lint_cmake' to check CMake code style
+[0.588s] -- Added test 'uncrustify' to check C / C++ code style
+[0.588s] -- Configured uncrustify additional arguments: 
+[0.588s] -- Added test 'xmllint' to check XML markup files
+[0.588s] -- Configuring done
+[0.594s] -- Generating done
+[0.595s] -- Build files have been written to: /home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050
+[0.608s] [35m[1mConsolidate compiler generated dependencies of target mpu_6050_pub[0m
+[0.619s] [ 33%] [32m[1mLinking CXX executable mpu_6050_pub[0m
+[0.726s] [100%] Built target mpu_6050_pub
+[0.733s] Invoked command in '/home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050 -- -j20 -l20
+[0.749s] Invoking command in '/home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050
+[0.753s] -- Install configuration: ""
+[0.753s] -- Installing: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/lib/mpu6050/mpu_6050_pub
+[0.753s] -- Set runtime path of "/home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/lib/mpu6050/mpu_6050_pub" to ""
+[0.754s] -- Installing: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/ament_index/resource_index/package_run_dependencies/mpu6050
+[0.754s] -- Installing: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/ament_index/resource_index/parent_prefix_path/mpu6050
+[0.754s] -- Installing: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/environment/ament_prefix_path.sh
+[0.754s] -- Installing: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/environment/ament_prefix_path.dsv
+[0.754s] -- Installing: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/environment/path.sh
+[0.754s] -- Installing: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/environment/path.dsv
+[0.754s] -- Installing: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/local_setup.bash
+[0.754s] -- Installing: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/local_setup.sh
+[0.754s] -- Installing: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/local_setup.zsh
+[0.754s] -- Installing: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/local_setup.dsv
+[0.754s] -- Installing: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/package.dsv
+[0.754s] -- Installing: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/ament_index/resource_index/packages/mpu6050
+[0.754s] -- Installing: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/cmake/mpu6050Config.cmake
+[0.754s] -- Installing: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/cmake/mpu6050Config-version.cmake
+[0.754s] -- Installing: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/package.xml
+[0.755s] Invoked command in '/home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050

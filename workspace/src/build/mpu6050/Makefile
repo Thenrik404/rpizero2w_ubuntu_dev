@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rpizero2w_ubuntu_clone/workspace/src/mpu6050
+CMAKE_SOURCE_DIR = /home/docker/rpizero2w_ubuntu_dev/workspace/src/mpu6050
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rpizero2w_ubuntu_clone/workspace/src/build/mpu6050
+CMAKE_BINARY_DIR = /home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rpizero2w_ubuntu_clone/workspace/src/build/mpu6050/CMakeFiles /home/rpizero2w_ubuntu_clone/workspace/src/build/mpu6050//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050/CMakeFiles /home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rpizero2w_ubuntu_clone/workspace/src/build/mpu6050/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -198,24 +198,24 @@ mpu6050_uninstall/fast:
 .PHONY : mpu6050_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named mpu6050_pub
+# Target rules for targets named mpu_6050_pub
 
 # Build rule for target.
-mpu6050_pub: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mpu6050_pub
-.PHONY : mpu6050_pub
+mpu_6050_pub: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mpu_6050_pub
+.PHONY : mpu_6050_pub
 
 # fast build rule for target.
-mpu6050_pub/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpu6050_pub.dir/build.make CMakeFiles/mpu6050_pub.dir/build
-.PHONY : mpu6050_pub/fast
+mpu_6050_pub/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpu_6050_pub.dir/build.make CMakeFiles/mpu_6050_pub.dir/build
+.PHONY : mpu_6050_pub/fast
 
 src/MPU6050.o: src/MPU6050.cpp.o
 .PHONY : src/MPU6050.o
 
 # target to build an object file
 src/MPU6050.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpu6050_pub.dir/build.make CMakeFiles/mpu6050_pub.dir/src/MPU6050.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpu_6050_pub.dir/build.make CMakeFiles/mpu_6050_pub.dir/src/MPU6050.cpp.o
 .PHONY : src/MPU6050.cpp.o
 
 src/MPU6050.i: src/MPU6050.cpp.i
@@ -223,7 +223,7 @@ src/MPU6050.i: src/MPU6050.cpp.i
 
 # target to preprocess a source file
 src/MPU6050.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpu6050_pub.dir/build.make CMakeFiles/mpu6050_pub.dir/src/MPU6050.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpu_6050_pub.dir/build.make CMakeFiles/mpu_6050_pub.dir/src/MPU6050.cpp.i
 .PHONY : src/MPU6050.cpp.i
 
 src/MPU6050.s: src/MPU6050.cpp.s
@@ -231,7 +231,7 @@ src/MPU6050.s: src/MPU6050.cpp.s
 
 # target to generate assembly for a file
 src/MPU6050.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpu6050_pub.dir/build.make CMakeFiles/mpu6050_pub.dir/src/MPU6050.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpu_6050_pub.dir/build.make CMakeFiles/mpu_6050_pub.dir/src/MPU6050.cpp.s
 .PHONY : src/MPU6050.cpp.s
 
 src/mpu6050_pub.o: src/mpu6050_pub.cpp.o
@@ -239,7 +239,7 @@ src/mpu6050_pub.o: src/mpu6050_pub.cpp.o
 
 # target to build an object file
 src/mpu6050_pub.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpu6050_pub.dir/build.make CMakeFiles/mpu6050_pub.dir/src/mpu6050_pub.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpu_6050_pub.dir/build.make CMakeFiles/mpu_6050_pub.dir/src/mpu6050_pub.cpp.o
 .PHONY : src/mpu6050_pub.cpp.o
 
 src/mpu6050_pub.i: src/mpu6050_pub.cpp.i
@@ -247,7 +247,7 @@ src/mpu6050_pub.i: src/mpu6050_pub.cpp.i
 
 # target to preprocess a source file
 src/mpu6050_pub.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpu6050_pub.dir/build.make CMakeFiles/mpu6050_pub.dir/src/mpu6050_pub.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpu_6050_pub.dir/build.make CMakeFiles/mpu_6050_pub.dir/src/mpu6050_pub.cpp.i
 .PHONY : src/mpu6050_pub.cpp.i
 
 src/mpu6050_pub.s: src/mpu6050_pub.cpp.s
@@ -255,7 +255,7 @@ src/mpu6050_pub.s: src/mpu6050_pub.cpp.s
 
 # target to generate assembly for a file
 src/mpu6050_pub.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpu6050_pub.dir/build.make CMakeFiles/mpu6050_pub.dir/src/mpu6050_pub.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpu_6050_pub.dir/build.make CMakeFiles/mpu_6050_pub.dir/src/mpu6050_pub.cpp.s
 .PHONY : src/mpu6050_pub.cpp.s
 
 # Help Target
@@ -273,7 +273,7 @@ help:
 	@echo "... test"
 	@echo "... mpu6050_uninstall"
 	@echo "... uninstall"
-	@echo "... mpu6050_pub"
+	@echo "... mpu_6050_pub"
 	@echo "... src/MPU6050.o"
 	@echo "... src/MPU6050.i"
 	@echo "... src/MPU6050.s"

@@ -3,26 +3,27 @@
 //Licensed under the CC BY-NC SA 4.0
 
 //Example code
-#include "rclcpp/rclcpp.hpp"
+#include <mpu6050/MPU6050.h>
+
 #include "geometry_msgs/msg/transform_stamped.hpp"
 #include "tf2/LinearMath/Quaternion.h"
 #include "tf2_ros/transform_broadcaster.h"
 #include <math.h>
-#include <mpu6050/MPU6050.h>
+#include "rclcpp/rclcpp.hpp"
 
 MPU6050 device(0x68);
 
-int main() {
+int main(int argc, char * argv[]) {
 	float ax, ay, az, gr, gp, gy; //Variables to store the accel, gyro and angle values
 
 	sleep(1); //Wait for the MPU6050 to stabilize
 
-/*
+
 	//Calculate the offsets
 	std::cout << "Calculating the offsets...\n    Please keep the accelerometer level and still\n    This could take a couple of minutes...";
 	device.getOffsets(&ax, &ay, &az, &gr, &gp, &gy);
 	std::cout << "Gyroscope R,P,Y: " << gr << "," << gp << "," << gy << "\nAccelerometer X,Y,Z: " << ax << "," << ay << "," << az << "\n";
-*/
+
 
 	//Read the current yaw angle
 	device.calc_yaw = true;
@@ -55,7 +56,7 @@ int main() {
 		// usleep(250000); //0.25sec
 		// Update quaternion from Euler angles
         tf2::Quaternion quaternion;
-        quaternion.setRPY(0.1, 0.2, 0.3); // Replace with your desired Euler angles
+        quaternion.setRPY(gr/M_PI, gp/M_PI, gy/M_PI); // Replace with your desired Euler angles
 
         // Set the quaternion and timestamp in the TransformStamped message
         transform_stamped.transform.rotation.x = quaternion.x();

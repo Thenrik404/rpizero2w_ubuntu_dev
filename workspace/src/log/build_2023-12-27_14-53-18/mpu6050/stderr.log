@@ -1,0 +1,13 @@
+[01m[K/home/docker/rpizero2w_ubuntu_dev/workspace/src/mpu6050/src/mpu6050_pub.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kmpu6050/MPU6050.h: No such file or directory
+    6 | #include [01;31m[K<mpu6050/MPU6050.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/docker/rpizero2w_ubuntu_dev/workspace/src/mpu6050/src/MPU6050.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kmpu6050/MPU6050.h: No such file or directory
+    6 | #include [01;31m[K"mpu6050/MPU6050.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+gmake[2]: *** [CMakeFiles/mpu_6050_pub.dir/build.make:76: CMakeFiles/mpu_6050_pub.dir/src/mpu6050_pub.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/mpu_6050_pub.dir/build.make:90: CMakeFiles/mpu_6050_pub.dir/src/MPU6050.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mpu_6050_pub.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

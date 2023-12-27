@@ -6,27 +6,27 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 # find dependencies
-find_package(ament_cmake REQUIRED
-  rclcpp REQUIRED
-  geometry_msgs REQUIRED
-  tf2 REQUIRED
-  tf2_ros REQUIRED
-)
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
-add_executable(mpu6050_pub src/mpu6050_pub.cpp src/MPU6050.cpp)
-ament_target_dependencies(mpu6050_pub rclcpp geometry_msgs tf2 tf2_ros)
-target_include_directories(mpu6050_pub PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include>)
-target_compile_features(mpu6050_pub PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
-target_link_libraries(mpu6050_pub -li2c)
+include_directories(
+  include
+)
 
-
-install(TARGETS mpu6050_pub
+add_executable(mpu_6050_pub src/mpu6050_pub.cpp src/MPU6050.cpp)
+ament_target_dependencies(mpu_6050_pub rclcpp std_msgs geometry_msgs tf2 tf2_ros)
+target_link_libraries(mpu_6050_pub -li2c)
+install(TARGETS
+mpu_6050_pub
   DESTINATION lib/${PROJECT_NAME})
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

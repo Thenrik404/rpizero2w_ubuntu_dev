@@ -1,0 +1,25 @@
+[0.026s] Invoking command in '/home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050 -- -j20 -l20
+[0.058s] [ 33%] [32mBuilding CXX object CMakeFiles/mpu_6050_pub.dir/src/mpu6050_pub.cpp.o[0m
+[2.153s] [ 66%] [32m[1mLinking CXX executable mpu_6050_pub[0m
+[2.262s] [100%] Built target mpu_6050_pub
+[2.274s] Invoked command in '/home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050 -- -j20 -l20
+[2.294s] Invoking command in '/home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050
+[2.297s] -- Install configuration: ""
+[2.297s] -- Installing: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/lib/mpu6050/mpu_6050_pub
+[2.298s] -- Set runtime path of "/home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/lib/mpu6050/mpu_6050_pub" to ""
+[2.298s] -- Up-to-date: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/ament_index/resource_index/package_run_dependencies/mpu6050
+[2.298s] -- Up-to-date: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/ament_index/resource_index/parent_prefix_path/mpu6050
+[2.298s] -- Up-to-date: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/environment/ament_prefix_path.sh
+[2.298s] -- Up-to-date: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/environment/ament_prefix_path.dsv
+[2.298s] -- Up-to-date: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/environment/path.sh
+[2.298s] -- Up-to-date: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/environment/path.dsv
+[2.299s] -- Up-to-date: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/local_setup.bash
+[2.299s] -- Up-to-date: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/local_setup.sh
+[2.299s] -- Up-to-date: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/local_setup.zsh
+[2.299s] -- Up-to-date: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/local_setup.dsv
+[2.299s] -- Up-to-date: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/package.dsv
+[2.300s] -- Up-to-date: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/ament_index/resource_index/packages/mpu6050
+[2.300s] -- Up-to-date: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/cmake/mpu6050Config.cmake
+[2.300s] -- Up-to-date: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/cmake/mpu6050Config-version.cmake
+[2.300s] -- Up-to-date: /home/docker/rpizero2w_ubuntu_dev/workspace/src/install/mpu6050/share/mpu6050/package.xml
+[2.300s] Invoked command in '/home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/docker/rpizero2w_ubuntu_dev/workspace/src/build/mpu6050
